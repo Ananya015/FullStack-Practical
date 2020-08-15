@@ -122,6 +122,97 @@
                
            }
 
+           .maindiv{
+               justify-content: space-around;
+               display: flex;
+           /* display: block;
+            margin-left: auto;
+            margin-right: auto;   */
+            margin-top: 10px;
+           padding: 10px;
+           width: 100%;
+           float: left;
+           padding: 10px;
+        }
+
+        .box{
+             /* display:inline-flexbox; */
+            background-color:rgb(68, 10, 63) ;
+            box-shadow: 4px 4px 4px 4px grey;
+            float: left;
+            width: 300px;  
+            border-radius: 10px;
+            margin: 30px;
+            border:2px solid greenyellow;
+            height: 100%;
+            /* height:570px; */
+            
+            
+
+        }
+        .box-img img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 90%;
+            height: 170px;
+            
+                        
+        }
+        .title h2{
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            color:white;
+            font-weight: normal;
+            
+           
+        }
+        .description-cards{
+            padding: 20px;
+            color:greenyellow;
+            text-align:justify;
+            /* font-weight: 500; */
+            line-height: 20px;
+            margin: 2px;
+           
+            /* height: 200px; */
+            
+        }
+        .link{
+           
+           /* display: block; */
+            /* box-sizing: border-box; */
+            background-color:white;
+            color:rgb(68, 10, 63);
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top:50px;
+            
+        }
+        .link a{
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;     
+            text-align: center;
+            display: block;
+        }
+        .link a:hover{
+            background-color:yellowgreen;
+            cursor:pointer;
+            border-radius: 10px;
+            color:ivory;
+            font-weight: bolder;
+            transition: 1s;
+            
+
+        }
+
     </style>
 </head>
 <body>
@@ -147,13 +238,13 @@
                     <h1>Team Members</h1>
             <div class="team"> 
                 <div id="pic">
-                    <img src="../images/3.png" alt="">
+                    <img src="../images/3.png" >
                 
-                    <img src="../images/2.png" alt="">
+                    <img src="../images/2.png" >
                 
-                    <img src="../images/9.png" alt="">
+                    <img src="../images/9.png" >
                 
-                    <img src="../images/1.png" alt="">
+                    <img src="../images/1.png" >
                 </div>
             </div>
                   <h1>About Us</h1>
@@ -186,6 +277,94 @@
                 </div>
             </div>    
             <h1>Technologies used</h1>  
+
+            <!-- add cards -->
+
+            <div class="maindiv">
+        
+                <div class="box">
+                    <div class="box-img"> 
+                         <img src="../images/html.jpg" >
+                    </div>
+               
+                <div class="title">
+                    <h2>Introduction to HTML</h2>
+                </div>
+                <div class="description-cards">
+                    Hypertext Markup Language (HTML) is the standard markup language for documents
+                     designed to be displayed in a web browser. 
+                     It can be assisted by technologies such as Cascading Style Sheets (CSS) and 
+                     scripting languages such as JavaScript.
+                     HTML elements are the building blocks of HTML pages.
+                </div>
+                <div class="link" >
+                    <a href="HTML.html">Read More</a>
+                </div>
+            
+        </div>
+            <div class="box">
+                <div class="box-img"> 
+                     <img src="../images/cssimage.jpg"  >
+                </div>
+           
+            <div class="title">
+                <h2>Introduction to CSS</h2>
+            </div>
+            <div class="description-cards">
+                Cascading Style Sheets (CSS) is a style sheet language 
+                used for describing the presentation.
+                 CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable 
+                 the separation of presentation and content, including layout, colors, and fonts
+                accessibility.
+                 
+            </div>
+            <div class="link">
+                <a href="CSS.html">Read More</a>
+            </div>
+            </div>
+        
+        <div class="box">
+            <div class="box-img"> 
+                 <img src="../images/js.jpg" >
+            </div>
+        
+        <div class="title">
+            <h2>Introduction to JavaScript</h2>
+        </div>
+        <div class="description-cards">
+                     JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. 
+                    JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
+                     It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                    
+                     
+        </div>
+        <div class="link">
+                <a href="JS.html">Read More</a>
+        </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-img"> 
+                 <img src="../images/bootstrapimage.jpg"  >
+            </div>
+        
+        <div class="title">
+            <h2>Introduction to Bootstrap</h2>
+        </div>
+        <div class="description-cards">
+            Bootstrap is a free and open-source CSS framework 
+            directed at responsive, mobile-first front-end web development.
+             It contains CSS- and (optionally) JavaScript-based design templates 
+             for typography, forms, buttons, navigation, and other interface components.
+             
+        </div>
+        <div class="link">
+            <a href="BStrap.html">Read More</a>
+        </div>
+        </div>
+        
+        
+        </div>
         </div>
     
 </body>
