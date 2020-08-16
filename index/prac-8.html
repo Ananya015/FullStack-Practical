@@ -1,174 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-8</title>
     <style>
-            *{
-                padding: 0px;
-                margin: 0px auto;
-            }
-            html{
-                scroll-behavior: smooth;
-            }
-            .container{
-                width: 100%;
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
 
-            }
-            body{
-                margin: 10px;
-            }
-            .header{
-                display: flex;
-                align-items: center;
-                text-align: center;
-                height: 90px;
-                width: 100%;
-                background-color: rgba(8, 7, 7, 0.925);
-                justify-content: center;
-                position:fixed;
-                
-                
-            }
-            .navbar li{
-               display: inline;
-               
-            }
-            
-           .navbar{
-               width: 100%; 
-               
-              
-           }
-            .navbar li a{
-                
-              text-decoration:none;
-              color: white;
-             font-weight:bold ;
-              letter-spacing: 2px;
-             margin-left: 80px;
-             margin-right: 80px;
-             font-size: 30px;
-            
-             /* height: 100%; */
-                    
-             
-            
-           }
-           .navbar li a:hover{
-               color: black;
-               font-family:cursive;
-               background-color: white;
-               padding: 10px;
-                
-              
-           }
-           .banner{
-              display: flex;
-               text-align: center;
-               align-items: center;
-               margin-top: 15px;
-               margin-bottom: 15px;
-               background-size: cover;
-              
-    
-           }
-           
-           .description{
-               color:rgb(0, 0, 0);
-               font-size: 50px;
-               font-weight: bolder;
-               position: absolute;
-               top:20%;
-               left: 30px;
-               
-           }
-           h1{
-               text-align: center;
-               margin-top: 80px;
-               margin-bottom: 50px;
-               font-size: 40px;
+        html {
+            scroll-behavior: smooth;
+        }
 
-           }
-           .team{
-               display: flex;
-               justify-content: space-around;
-               width: 100%;
-           }
-           #pic img{
-            margin-right: 80px;
-            margin-left: 80px;
+        .container {
+            width: 100%;
+
+        }
+
+        body {
+            margin: 10px;
+            padding:0px;
+            margin-right:0px
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 90px;
+            width: 100%;
+            background-color: rgba(8, 7, 7, 0.925);
+            position: sticky;
+            top:0
+
+        }
+
+        .navbar li {
+            display: inline;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        .navbar li a {
+
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 30px;
+
+            /* height: 100%; */
+
+
+
+        }
+
+        .navbar li a:hover {
+            color: black;
+            font-family: cursive;
+            background-color: white;
+            padding: 10px;
+
+
+        }
+
+        .banner {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-size: cover;
+            width: 100%;
+
+
+        }
+
+        .description {
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            font-weight: bolder;
+            position: absolute;
+            top: 20%;
+            left: 30px;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            font-size: 40px;
+
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            width: 95%;
+        }
+
+        #pic img {
+            margin-right: 60px;
+            margin-left: 60px;
             border-radius: 50%;
-           }
-           .about{
-               width: 100%;
-               height: 640px;
-               display: flex;
-               margin:0px;
-              
-               
-           }
-            .left{
+        }
+
+        .about {
+            width: 100%;
+            height: 640px;
+            display: flex;
+            margin: 0px;
+
+
+        }
+
+        .left {
 
             float: left;
             width: 50%;
             height: 100%;
-            background-color:rgb(35, 151, 167);    
+            background-color: rgb(35, 151, 167);
             text-align: justify;
-            color:white;
+            color: white;
             padding: 20px;
             font-size: 20px;
             word-spacing: 3px;
-            
-           
-           } 
-           .right{
+
+
+        }
+
+        .right {
             width: 50%;
             height: 100%;
             display: flex;
             justify-content: space-around;
 
-           }
-           .images2 img{
-              
-               width: 700px;
-               height: 220px;
-               display: inline-block;
-               margin-bottom: 7px;
-               
-           }
+        }
 
-           .maindiv{
-               justify-content: space-around;
-               display: flex;
-           /* display: block;
+        .images2 img {
+
+            width: 700px;
+            height: 220px;
+            display: inline-block;
+            margin-bottom: 7px;
+
+        }
+
+        .maindiv {
+            justify-content: space-around;
+            display: flex;
+            /* display: block;
             margin-left: auto;
             margin-right: auto;   */
-           
-           padding: 10px;
-           width: 100%;
-           float: left;
-           padding: 10px;
-           margin-bottom: 50px;
+
+            padding: 10px;
+            width: 100%;
+            float: left;
+            padding: 10px;
+            margin-bottom: 50px;
         }
 
-        .box{
-             /* display:inline-flexbox; */
-            background-color:rgb(68, 10, 63) ;
+        .box {
+            /* display:inline-flexbox; */
+            background-color: rgb(68, 10, 63);
             box-shadow: 4px 4px 4px 4px grey;
             float: left;
-            width: 300px;  
+            width: 300px;
             border-radius: 10px;
             margin: 30px;
-            border:2px solid greenyellow;
+            border: 2px solid greenyellow;
             height: 100%;
             /* height:570px; */
-            
-            
+
+
 
         }
-        .box-img img{
+
+        .box-img img {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -176,248 +193,266 @@
             border-radius: 10px;
             width: 90%;
             height: 170px;
-            
-                        
+
+
         }
-        .title h2{
+
+        .title h2 {
             margin-top: 20px;
             text-align: center;
             width: 100%;
-            color:white;
+            color: white;
             font-weight: normal;
-            
-           
+
+
         }
-        .description-cards{
+
+        .description-cards {
             padding: 20px;
-            color:greenyellow;
-            text-align:justify;
+            color: greenyellow;
+            text-align: justify;
             /* font-weight: 500; */
             line-height: 20px;
             margin: 2px;
-           
+
             /* height: 200px; */
-            
+
         }
-        .link{
-           
-           /* display: block; */
+
+        .link {
+
+            /* display: block; */
             /* box-sizing: border-box; */
-            background-color:white;
-            color:rgb(68, 10, 63);
+            background-color: white;
+            color: rgb(68, 10, 63);
             margin-left: 10px;
             margin-right: 10px;
             height: 30px;
             margin-bottom: 20px;
             border-radius: 10px;
-            margin-top:50px;
-            
+            margin-top: 50px;
+
         }
-        .link a{
+
+        .link a {
             padding: 5px;
             margin-left: auto;
-            margin-right: auto;     
+            margin-right: auto;
             text-align: center;
             display: block;
         }
-        .link a:hover{
-            background-color:yellowgreen;
-            cursor:pointer;
+
+        .link a:hover {
+            background-color: yellowgreen;
+            cursor: pointer;
             border-radius: 10px;
-            color:ivory;
+            color: ivory;
             font-weight: bolder;
             transition: 1s;
-            
+
 
         }
-        .footer{
+
+        .footer {
             background-color: rgb(65, 206, 211);
             display: flex;
-           
+
             align-items: center;
             text-align: center;
             height: 110px;
             width: 100%;
-            padding: 20px;
-           
         }
-        .text{
+
+        .text {
             font-size: 30px;
             text-align: center;
             font-weight: bold;
         }
-        .text a{
+
+        .text a {
             text-decoration: none;
             font-size: 25px;
         }
-        .text a:hover{
-            color:rgb(5, 114, 5) ;
+
+        .text a:hover {
+            color: rgb(5, 114, 5);
             text-decoration: underline;
             font-family: cursive;
         }
-
     </style>
 </head>
+
 <body>
-        <div class="container">
-            <div class="header">
-                <ul class="navbar">
+    <div class="container">
+        <div class="header">
+            <ul class="navbar">
 
-                        <li><a href="#Home">HOME</a></li>
-                        <li><a href="#About">ABOUT US</a></li>
-                        <li><a href="#Team">TEAM</a></li>
-                        <li><a href="#Techno">TECHNOLOGIES</a></li>
-                        <li><a href="#Contact">CONTACT</a></li>
-   
-                </ul>
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#About">ABOUT US</a></li>
+                <li><a href="#Team">TEAM</a></li>
+                <li><a href="#Techno">TECHNOLOGIES</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+
+            </ul>
+        </div>
+        <div class="banner" id="Home">
+            <div class="image">
+                <img src="../images/wallpap.jpg" alt="laptop" width="100%" height="5%">
+                <div class="description">PRACTICAL-8</div>
             </div>
-            <div class="banner" id="Home">
-                <div class="image">
-                    <img src="../images/wallpap.jpg" alt="laptop" width="100%" height="5%">
-                   <div class="description">PRACTICAL-8</div> 
-                </div>
 
+        </div>
+        <h1>Team Members</h1>
+        <div class="team" id="Team">
+            <div id="pic">
+                <img src="../images/3.png">
+
+                <img src="../images/2.png">
+
+                <img src="../images/9.png">
+
+                <img src="../images/1.png">
             </div>
-                    <h1>Team Members</h1>
-            <div class="team" id="Team"> 
-                <div id="pic">
-                    <img src="../images/3.png" >
-                
-                    <img src="../images/2.png" >
-                
-                    <img src="../images/9.png" >
-                
-                    <img src="../images/1.png" >
+        </div>
+        <h1>About Us</h1>
+
+        <div class="about" id="About">
+            <div class="left">
+                <h3 style="text-decoration: underline;" ;">About the Projects</h3><br>
+                Welcome to the Fullstack Course!!<br>
+                Front-end web development is everything involved in programming the user
+                interface of a web application. Typically it refers to the <i><b></b>HyperText Markup
+                    Language</b></i>(HTML),
+                <i><b>Cascading Style Sheets</b></i>(CSS) and
+                <i><b>JavaScript</b></i> portion of website production
+                as opposed to the database or server-site programming. It encompasses
+                everything from building a simple page of HTML text to creating complex,
+                responsive HTML5 design to be accessed via various differnt browers,
+                devices and screen sizes klsej wrngjrwv wjgi vigvti vgtio43vyq;4 ctu2qpuc9qm34 cu
+                2th45iu 4uvtn98425vnut894n t5vtn4tu4nv tu54vnt45u45
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nihil aut omnis incidunt.
+                Odio ut aliquam pariatur officia deleniti, nesciunt alias itaque molestiae
+                omnis hic quas dolorem aspernatur officiis atque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi molestias porro unde esse odit rem
+                possimus, dolorem quis natus nam iure velit recusandae minima quibusdam, molestiae perspiciatis, facere
+                vero reprehenderit sint accusamus. Sequi libero, vero iste molestiae quaerat perferendis ad est
+                possimus, quidem laborum id sed autem in omnis rem. Ad, autem quis esse molestiae maxime sed sint
+                nesciunt iste quam cum ipsa non tenetur odit eum necessitatibus ipsum, alias impedit error labore
+                consequatur blanditiis mollitia eius iusto. Dignissimos sit ad iste eos, assumenda libero labore
+                obcaecati qui vitae tempore rem quae animi. Necessitatibus, dicta fugiat vero totam consequatur magnam!
+            </div>
+            <div class="right">
+                <div class="images2">
+                    <div><img src="../images/p1.jpg"></div>
+                    <div><img src="../images/p2.jpeg"></div>
+                    <div><img src="../images/p3.jpg"></div>
                 </div>
             </div>
-                  <h1>About Us</h1>
+        </div>
+        <h1>Technologies used</h1>
 
-            <div class ="about" id="About">
-                <div class="left">
-                    <h3 style="text-decoration: underline;";">About the Projects</h3><br>
-                    Welcome to the Fullstack Course!!<br>
-                    Front-end web development is everything involved in programming the user 
-                    interface of a web application. Typically it refers to the <i><b></b>HyperText Markup
-                        Language</b></i>(HTML), 
-                        <i><b>Cascading Style Sheets</b></i>(CSS) and 
-                        <i><b>JavaScript</b></i> portion of website production 
-                        as opposed to the database or server-site programming. It encompasses
-                        everything from building a simple page of HTML text to creating complex,
-                         responsive HTML5 design to be accessed via various differnt browers,
-                         devices and screen sizes klsej wrngjrwv wjgi vigvti vgtio43vyq;4 ctu2qpuc9qm34 cu
-                         2th45iu 4uvtn98425vnut894n t5vtn4tu4nv tu54vnt45u45
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nihil aut omnis incidunt.
-                          Odio ut aliquam pariatur officia deleniti, nesciunt alias itaque molestiae 
-                          omnis hic quas dolorem aspernatur officiis atque. 
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi molestias porro unde esse odit rem possimus, dolorem quis natus nam iure velit recusandae minima quibusdam, molestiae perspiciatis, facere vero reprehenderit sint accusamus. Sequi libero, vero iste molestiae quaerat perferendis ad est possimus, quidem laborum id sed autem in omnis rem. Ad, autem quis esse molestiae maxime sed sint nesciunt iste quam cum ipsa non tenetur odit eum necessitatibus ipsum, alias impedit error labore consequatur blanditiis mollitia eius iusto. Dignissimos sit ad iste eos, assumenda libero labore obcaecati qui vitae tempore rem quae animi. Necessitatibus, dicta fugiat vero totam consequatur magnam!
+        <!-- add cards -->
+
+        <div class="maindiv" id="Techno">
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/html.jpg">
                 </div>
-                <div class="right">
-                    <div class="images2">
-                        <div><img src="../images/p1.jpg" ></div>
-                        <div><img src="../images/p2.jpeg" ></div>
-                        <div><img src="../images/p3.jpg" ></div>
-                    </div>
-                </div>
-            </div>    
-            <h1>Technologies used</h1>  
 
-            <!-- add cards -->
-
-            <div class="maindiv" id="Techno">
-        
-                <div class="box">
-                    <div class="box-img"> 
-                         <img src="../images/html.jpg" >
-                    </div>
-               
                 <div class="title">
                     <h2>Introduction to HTML</h2>
                 </div>
                 <div class="description-cards">
                     Hypertext Markup Language (HTML) is the standard markup language for documents
-                     designed to be displayed in a web browser. 
-                     It can be assisted by technologies such as Cascading Style Sheets (CSS) and 
-                     scripting languages such as JavaScript.
-                     HTML elements are the building blocks of HTML pages.
+                    designed to be displayed in a web browser.
+                    It can be assisted by technologies such as Cascading Style Sheets (CSS) and
+                    scripting languages such as JavaScript.
+                    HTML elements are the building blocks of HTML pages.
                 </div>
-                <div class="link" >
+                <div class="link">
                     <a href="HTML.html">Read More</a>
                 </div>
-            
-        </div>
+
+            </div>
             <div class="box">
-                <div class="box-img"> 
-                     <img src="../images/cssimage.jpg"  >
+                <div class="box-img">
+                    <img src="../images/cssimage.jpg">
                 </div>
-           
-            <div class="title">
-                <h2>Introduction to CSS</h2>
+
+                <div class="title">
+                    <h2>Introduction to CSS</h2>
+                </div>
+                <div class="description-cards">
+                    Cascading Style Sheets (CSS) is a style sheet language
+                    used for describing the presentation.
+                    CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed
+                    to enable
+                    the separation of presentation and content, including layout, colors, and fonts
+                    accessibility.
+
+                </div>
+                <div class="link">
+                    <a href="CSS.html">Read More</a>
+                </div>
             </div>
-            <div class="description-cards">
-                Cascading Style Sheets (CSS) is a style sheet language 
-                used for describing the presentation.
-                 CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable 
-                 the separation of presentation and content, including layout, colors, and fonts
-                accessibility.
-                 
-            </div>
-            <div class="link">
-                <a href="CSS.html">Read More</a>
-            </div>
-            </div>
-        
-        <div class="box">
-            <div class="box-img"> 
-                 <img src="../images/js.jpg" >
-            </div>
-        
-        <div class="title">
-            <h2>Introduction to JavaScript</h2>
-        </div>
-        <div class="description-cards">
-                     JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. 
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/js.jpg">
+                </div>
+
+                <div class="title">
+                    <h2>Introduction to JavaScript</h2>
+                </div>
+                <div class="description-cards">
+                    JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript
+                    specification.
                     JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
-                     It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
-                    
-                     
-        </div>
-        <div class="link">
-                <a href="JS.html">Read More</a>
-        </div>
-        </div>
-        
-        <div class="box">
-            <div class="box-img"> 
-                 <img src="../images/bootstrapimage.jpg"  >
+                    It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class
+                    functions.
+
+
+                </div>
+                <div class="link">
+                    <a href="JS.html">Read More</a>
+                </div>
             </div>
-        
-        <div class="title">
-            <h2>Introduction to Bootstrap</h2>
-        </div>
-        <div class="description-cards">
-            Bootstrap is a free and open-source CSS framework 
-            directed at responsive, mobile-first front-end web development.
-             It contains CSS- and (optionally) JavaScript-based design templates 
-             for typography, forms, buttons, navigation, and other interface components.
-             
-        </div>
-        <div class="link">
-            <a href="BStrap.html">Read More</a>
-        </div>
-        </div>
-        </div>
-         
-        <h1>Contact Us</h1>
-        
-        <div class="footer" id="Contact">
-            <div class="text"> Website Template for Practical-8
-            <br><span style="font-size: 25px;">Made by <span style="color: rgb(252, 9, 9);">Ananya Jain</span>  </span> 
-            <br><a href="#Home">Move to top</a>  
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/bootstrapimage.jpg">
+                </div>
+
+                <div class="title">
+                    <h2>Introduction to Bootstrap</h2>
+                </div>
+                <div class="description-cards">
+                    Bootstrap is a free and open-source CSS framework
+                    directed at responsive, mobile-first front-end web development.
+                    It contains CSS- and (optionally) JavaScript-based design templates
+                    for typography, forms, buttons, navigation, and other interface components.
+
+                </div>
+                <div class="link">
+                    <a href="BStrap.html">Read More</a>
+                </div>
             </div>
-            
         </div>
 
+        <h1>Contact Us</h1>
+
+        <div class="footer" id="Contact">
+            <div class="text"> Website Template for Practical-8
+                <br><span style="font-size: 25px;">Made by <span style="color: rgb(252, 9, 9);">&copy Ananya Jain</span>
+                </span>
+                <br><a href="#Home">Move to top</a>
+            </div>
+
         </div>
-    
+
+    </div>
+
 </body>
+
 </html>
