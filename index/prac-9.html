@@ -9,7 +9,7 @@
     <style>
         * {
             padding: 0px;
-            margin: 0px auto;
+            margin: 0px;
             box-sizing: border-box;
         }
 
@@ -20,36 +20,36 @@
 
         .container {
             width: 100%;
+            margin: auto;
+           
 
         }
 
         body {
             margin: 10px;
-            padding:0px;
-            margin-right:0px
+           
         }
 
         .header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+           
             height: 90px;
-            width: 98%;
+            width: 100%;
             background-color: rgba(8, 7, 7, 0.925);
             position: sticky;
-            top:0
+            top:0;
 
         }
 
         .navbar li {
-            display: inline;
-            margin-left: 40px;
-            margin-right: 40px;
+            display: inline-block;
+            line-height: 90px;
+                 
         }
 
         .navbar {
-            width: 98%;
+            list-style: none;
+            float: right;
+            padding:0 20px;  
         }
 
         .navbar li a {
@@ -59,9 +59,7 @@
             font-weight: bold;
             letter-spacing: 2px;
             font-size: 30px;
-
-            /* height: 100%; */
-
+            padding:0 20px;  
 
 
         }
@@ -82,7 +80,7 @@
             margin-top: 15px;
             margin-bottom: 15px;
             background-size: cover;
-            width: 98%;
+            width: 100%;
 
 
         }
@@ -108,7 +106,7 @@
         .team {
             display: flex;
             justify-content: space-around;
-            width: 95%;
+            width: 100%;
         }
 
         #pic img {
@@ -145,6 +143,7 @@
             width: 50%;
             height: 100%;
             display: flex;
+            float: right;
             justify-content: space-around;
 
         }
@@ -166,7 +165,7 @@
             margin-right: auto;   */
 
             padding: 10px;
-            width: 98%;
+            width: 100%;
             float: left;
             padding: 10px;
             margin-bottom: 50px;
@@ -260,7 +259,7 @@
             align-items: center;
             text-align: center;
             height: 110px;
-            width: 98%;
+            width: 100%;
         }
 
         .text {
@@ -292,6 +291,7 @@
                 <li><a href="#Team">TEAM</a></li>
                 <li><a href="#Techno">TECHNOLOGIES</a></li>
                 <li><a href="#Contact">CONTACT</a></li>
+                
 
             </ul>
         </div>
