@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>practical-9t</title>
+    <title>practical-9</title>
 </head>
 <body>
     <style>
@@ -276,7 +276,290 @@
             text-decoration: underline;
             font-family: cursive;
         }
+/* adding media query 1 */
 
+        @media (min-width:801px) and (max-width: 1199px){
+            html {
+        scroll-padding-top: 110px;
+        scroll-behavior: smooth;
+      }
+      .container{
+          width: 100%;
+      }
+       
+      .show-button,
+      .hide-btn,
+      #chk{
+          font-size: 30px;
+          line-height: 90px;
+          color:white;
+          float: right;
+          padding-right: 20px;
+          display: none;
+      }
+       .navbar li {
+           display: block;
+           line-height: 60px;
+          
+                
+       }
+       .show-button{
+           display: block;
+           
+       }
+       #chk:checked~.navbar{
+           right: 0;
+           
+       }
+       .hide-btn{
+           display: block;
+           position: absolute;
+           right: 15px;
+           top: 0;
+
+       }
+
+       .navbar {
+           list-style: none;
+           /* float: right; */
+           align-items: center;
+           text-align: center;
+           width: 100%;
+       }
+
+       .navbar li a {
+        display: inline-block;
+        text-decoration: none;
+        color: white; 
+        letter-spacing: 2px;
+        font-size: 25px;
+       padding-bottom: 0px; 
+        margin-top: 40px;
+        
+
+       }
+
+       .navbar li a:hover {
+           color: black;
+           /* font-family: cursive; */
+           background-color: white;
+           width: 100%;
+           font-family:unset;
+
+
+       }
+       .header{
+       
+        width: 100%;
+        background-color: rgb(77, 70, 70);
+        position: sticky;
+        top: 0;
+        height: 600px;
+       }
+       .banner {
+           display: flex;
+           
+           /* text-align: center;
+           align-items: center; */
+           margin-top: 15px;
+           margin-bottom: 15px;
+           background-size: cover;
+           width: 100%;
+           height: 680px;
+
+       }
+
+       .description {
+           color: rgb(0, 0, 0);
+           font-size: 50px;
+           font-weight: bolder;
+           position: absolute;
+           top: 20%;
+           left: 30px;
+
+       }
+
+       h1 {
+          text-align: center;
+           margin-top: 80px;
+           margin-bottom: 50px;
+           font-size: 40px;
+            
+
+       }
+
+       .team {
+           display: flex;
+           justify-content: space-around;
+           width: 100%;
+       }
+
+       #pic img {
+           margin-right: 60px;
+           margin-left: 60px;
+           border-radius: 50%;
+       }
+
+       .about::after {
+           /* width: 100%;
+           height: 640px;
+           display: flex;
+           margin: 0px; */
+        content: '';
+        display: block;
+        clear: both;
+
+       }
+
+       .left {
+
+           float: left;
+           width: 50%;
+           height: 550px;
+           background-color: rgb(35, 151, 167);
+           color: white;
+           
+       }
+       .left p{
+        padding: 20px;
+            font-size: 20px;
+            word-spacing: 3px;
+            text-align: justify;
+
+       }
+       .right {
+           width: 50%;
+           height: 550px;
+           /* display: flex; */
+           float: right;
+           /* justify-content: space-around; */
+
+       }
+
+       .images2 img {
+
+           /* width: 700px;
+           height: 220px; */
+           display:inline;
+           background-size: cover;
+           background-repeat: no-repeat;
+           /* margin-bottom: 7px; */
+
+       }
+
+       .maindiv {
+          
+           content: '';
+           display: block;
+           clear: both;
+       }
+
+       .box {
+           /* display:inline-flexbox; */
+           background-color: rgb(68, 10, 63);
+           box-shadow: 4px 4px 4px 4px grey;
+           float: left;
+           width: 300px;
+           border-radius: 10px;
+           margin: 30px;
+           border: 2px solid greenyellow;
+           height: 100%;
+           /* height:570px; */
+       }
+
+       .box-img img {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 15px;
+           border-radius: 10px;
+           width: 90%;
+           height: 170px;
+
+
+       }
+
+       .title h2 {
+           margin-top: 20px;
+           text-align: center;
+           width: 100%;
+           color: white;
+           font-weight: normal;
+
+
+       }
+
+       .description-cards {
+           padding: 20px;
+           color: greenyellow;
+           text-align: justify;
+           /* font-weight: 500; */
+           line-height: 20px;
+           margin: 2px;
+
+           /* height: 200px; */
+
+       }
+
+       .link {
+
+           /* display: block; */
+           /* box-sizing: border-box; */
+           background-color: white;
+           color: rgb(68, 10, 63);
+           margin-left: 10px;
+           margin-right: 10px;
+           height: 30px;
+           margin-bottom: 20px;
+           border-radius: 10px;
+           margin-top: 50px;
+
+       }
+
+       .link a {
+           padding: 5px;
+           margin-left: auto;
+           margin-right: auto;
+           text-align: center;
+           display: block;
+       }
+
+       .link a:hover {
+           background-color: yellowgreen;
+           cursor: pointer;
+           border-radius: 10px;
+           color: ivory;
+           font-weight: bolder;
+           transition: 1s;
+
+
+       }
+
+       .footer {
+           background-color: rgb(65, 206, 211);
+           text-align: center;
+           height: 110px;
+           width: 100%;
+       }
+
+       .text {
+           font-size: 30px;
+           text-align: center;
+           font-weight: bold;
+       }
+
+       .text a {
+           text-decoration: none;
+           font-size: 25px;
+       }
+
+       .text a:hover {
+           color: rgb(5, 114, 5);
+           text-decoration: underline;
+           font-family: cursive;
+       }
+
+        }
         
     </style>
 </head>
@@ -326,8 +609,8 @@
 
         <div class="about" id="About">
             <div class="left">
-                <h3 style="text-decoration: underline;" ;">About the Projects</h3><br>
-                Welcome to the Fullstack Course!!<br>
+                <h3 style="text-decoration: underline;" ;>About the Projects</h3><br>
+                <p>Welcome to the Fullstack Course!!<br>
                 Front-end web development is everything involved in programming the user
                 interface of a web application. Typically it refers to the <i><b></b>HyperText Markup
                     Language</b></i>(HTML),
@@ -347,7 +630,7 @@
                 possimus, quidem laborum id sed autem in omnis rem. Ad, autem quis esse molestiae maxime sed sint
                 nesciunt iste quam cum ipsa non tenetur odit eum necessitatibus ipsum, alias impedit error labore
                 consequatur blanditiis mollitia eius iusto. Dignissimos sit ad iste eos, assumenda libero labore
-                obcaecati qui vitae tempore rem quae animi. Necessitatibus, dicta fugiat vero totam consequatur magnam!
+                obcaecati qui vitae tempore rem quae animi. Necessitatibus, dicta fugiat vero totam consequatur magnam!</p>
             </div>
             <div class="right">
                 <div class="images2">
