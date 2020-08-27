@@ -321,8 +321,11 @@
        }
        .show-button{
            display: block;
-           
+           position: relative;
+           right: 15px;
+           top: 0;     
        }
+
        
        .hide-btn{
            display: block;
@@ -330,6 +333,10 @@
            right: 15px;
            top: 0;
 
+       }
+       .show-button,
+       .hide-btn:hover{
+           cursor: pointer;
        }
 
        .navbar {
@@ -342,7 +349,7 @@
            height:100vh;
            right:-250%;
            transition: 6s;
-           background-color:rgb(58, 54, 58)
+           background-color:black;
            
            
        }
@@ -378,7 +385,7 @@
        .header{
        
         width: 100%;
-        background-color: rgb(77, 70, 70);
+        background-color:black;
         position: sticky;
         top: 0;
        }
