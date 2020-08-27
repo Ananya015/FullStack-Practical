@@ -16,14 +16,30 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 110px;
+            scroll-padding-top: 200px;
         }
 
         .container {
             width: 100%;
             margin: auto;
-           
+        }
+        .show-button,
+        .hide-btn
+        {
+            font-size:30px;
+            color:white;
+            line-height:90px;
+            display:none;
 
+        }
+        #chk{
+            position:absolute;
+            visibility: hidden;
+            z-index:-2;
+        }
+
+        .show-button{
+            float:right;
         }
 
         body {
@@ -32,13 +48,11 @@
         }
 
         .header {
-           
             height: 90px;
             width: 100%;
             background-color: rgba(8, 7, 7, 0.925);
             position: sticky;
             top:0;
-
         }
 
         .navbar li {
@@ -51,6 +65,7 @@
             list-style: none;
             float: right;
             padding:0 20px;  
+            
         }
 
         .navbar li a {
@@ -122,41 +137,41 @@
             height: 640px;
             display: flex;
             margin: 0px;
-
+           overflow:hidden;
+           
 
         }
 
         .left {
 
             float: left;
-            width: 50%;
-            height: 100%;
+            width:50%;
+            height: 640px;
             background-color: rgb(35, 151, 167);
             text-align: justify;
             color: white;
             padding: 20px;
             font-size: 20px;
             word-spacing: 3px;
-
-
+            overflow:scroll;
         }
 
         .right {
-            width: 50%;
-            height: 100%;
+            width:50%;
+            height: 640px;
             display: flex;
             float: right;
             justify-content: space-around;
 
         }
 
-        .images2 img {
-
-            width: 700px;
-            height: 220px;
-            display: inline-block;
-            margin-bottom: 7px;
-
+        .images2 img{
+            height: 210px;
+            width: 100%;
+            float: right;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            
         }
 
         .maindiv {
@@ -288,7 +303,7 @@
           width: 100%;
       }
        
-      .show-button,
+      /* .show-button,
       .hide-btn,
       #chk{
           font-size: 30px;
@@ -296,8 +311,8 @@
           color:white;
           float: right;
           padding-right: 20px;
-          display: none;
-      }
+          
+      } */
        .navbar li {
            display: block;
            line-height: 60px;
@@ -308,10 +323,7 @@
            display: block;
            
        }
-       #chk:checked~.navbar{
-           right: 0;
-           
-       }
+       
        .hide-btn{
            display: block;
            position: absolute;
@@ -326,6 +338,20 @@
            align-items: center;
            text-align: center;
            width: 100%;
+           display:none;
+           height:100vh;
+           right:-250%;
+           transition: 6s;
+           background-color:rgb(58, 54, 58)
+           
+           
+       }
+
+       #chk:checked ~ .navbar{
+           display:block;
+       }
+       #chk:checked ~ .show-button{
+           opacity: 0;
        }
 
        .navbar li a {
@@ -355,7 +381,6 @@
         background-color: rgb(77, 70, 70);
         position: sticky;
         top: 0;
-        height: 600px;
        }
        .banner {
            display: flex;
@@ -395,19 +420,17 @@
        }
 
        #pic img {
-           margin-right: 60px;
-           margin-left: 60px;
+           margin-right: 10px;
+           margin-left: 10px;
            border-radius: 50%;
        }
 
        .about{
-           /* width: 100%;
+           width: 100%;
            height: 640px;
            display: flex;
-           margin: 0px; */
-        content: '';
-        display: block;
-        clear: both;
+           margin: 0px;
+           
 
        }
 
@@ -415,7 +438,7 @@
 
            float: left;
            width: 50%;
-           height: 550px;
+           height: 640px;
            background-color: rgb(35, 151, 167);
            color: white;
            
@@ -429,29 +452,29 @@
        }
        .right {
            width: 50%;
-           height: 550px;
-           /* display: flex; */
-           float: right;
-           /* justify-content: space-around; */
+           height: 640px;
+           margin-left: 12px;
+           display: flex;
+           float: right;   
+          
+       }
+       
+       .images2 img{
 
+           width: 100%;
+           height: 210px;
+          
        }
 
-       .images2 img {
-
-           /* width: 700px;
-           height: 220px; */
-           display:inline;
-           background-size: cover;
-           background-repeat: no-repeat;
-           /* margin-bottom: 7px; */
-
-       }
 
        .maindiv {
           
-           content: '';
+          
            display: block;
-           clear: both;
+           align-items: center;
+           
+           
+
        }
 
        .box {
@@ -461,10 +484,13 @@
            float: left;
            width: 300px;
            border-radius: 10px;
-           margin: 30px;
            border: 2px solid greenyellow;
            height: 100%;
-           /* height:570px; */
+           margin-right: 10%;
+          
+           
+          
+          
        }
 
        .box-img img {
@@ -568,7 +594,7 @@
     <div class="container">
         <div class="header">
             <input type="checkbox" id="chk"/>
-            <label for="chk" class="show button">
+            <label for="chk" class="show-button">
                 <i class="fa fa-bars"></i>
             </label>
             <ul class="navbar">
@@ -588,8 +614,9 @@
 
         <div class="banner" id="Home">
             <div class="image">
-                <img src="../images/wallpap.jpg" alt="laptop" width="100%" height="5%">
                 <div class="description">PRACTICAL-9</div>
+                <img src="../images/wallpap.jpg" alt="laptop" width="100%" height="5%">
+                
             </div>
 
         </div>
@@ -701,7 +728,7 @@
                     specification.
                     JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
                     It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class
-                    functions.
+                    functions...........
 
 
                 </div>
@@ -721,8 +748,9 @@
                 <div class="description-cards">
                     Bootstrap is a free and open-source CSS framework
                     directed at responsive, mobile-first front-end web development.
-                    It contains CSS- and (optionally) JavaScript-based design templates
-                    for typography, forms, buttons, navigation, and other interface components.
+                    It contains CSS- and (optionally) JavaScript-based design templates kjshc 
+                    skfjhjk kjefhaf jshckjscn
+                    for typography, forms, buttons, navigation, and other interface components............
 
                 </div>
                 <div class="link">
