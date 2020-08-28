@@ -102,12 +102,13 @@
         }
 
         .description {
-            color: rgb(0, 0, 0);
+            color: rgb(2, 2, 2);
             font-size: 50px;
             font-weight: bolder;
-            position: absolute;
+            position:absolute;
             top: 20%;
             left: 30px;
+           
 
         }
 
@@ -123,10 +124,12 @@
             display: flex;
             justify-content: space-around;
             width: 100%;
+            /* margin: 0px; */
         }
                       
 
         #pic img {
+           
             margin-right: 60px;
             margin-left: 60px;
             border-radius: 50%;
@@ -146,7 +149,7 @@
 
             float: left;
             width:50%;
-            height: 640px;
+            height: 600px;
             background-color: rgb(35, 151, 167);
             text-align: justify;
             color: white;
@@ -165,23 +168,47 @@
 
         }
 
-        .images2 img{
-            height: 210px;
+        .images2{
+            height: 213px;
             width: 100%;
             float: right;
             padding-left: 30px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+            
             
         }
+        #im1{
+           border: 2px solid rgb(136, 136, 17);
+           height:190px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p1.jpg');
+            background-size: cover;
+
+       }
+       #im2{
+           border: 2px solid palevioletred;
+           height:190px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p2.jpeg');
+            background-size: cover;
+
+       }
+       #im3{
+           border: 2px solid rgb(136, 136, 17);
+           height:190px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p3.jpg');
+            background-size: cover;
+
+       }
 
         .maindiv {
             justify-content: space-around;
             display: flex;
-            /* display: block;
-            margin-left: auto;
-            margin-right: auto;   */
-
-            padding: 10px;
+            display: block;
             width: 100%;
             float: left;
             padding: 10px;
@@ -193,6 +220,7 @@
             background-color: rgb(68, 10, 63);
             box-shadow: 4px 4px 4px 4px grey;
             float: left;
+            display: block;
             width: 300px;
             border-radius: 10px;
             margin: 30px;
@@ -294,25 +322,9 @@
         }
 /* adding media query 1 */
 
-        @media (min-width:801px) and (max-width: 1199px){
-            html {
-        scroll-padding-top: 110px;
-        scroll-behavior: smooth;
-      }
-      .container{
-          width: 100%;
-      }
-       
-      /* .show-button,
-      .hide-btn,
-      #chk{
-          font-size: 30px;
-          line-height: 90px;
-          color:white;
-          float: right;
-          padding-right: 20px;
-          
-      } */
+        @media(min-width: 402px) and (max-width: 913px)
+        {
+        
        .navbar li {
            display: block;
            line-height: 60px;
@@ -340,35 +352,41 @@
        }
 
        .navbar {
-           list-style: none;
-           /* float: right; */
+          
+           /* position: absolute; */
+           top: 0;
+            line-height: normal;
            align-items: center;
            text-align: center;
            width: 100%;
-           display:none;
-           height:100vh;
-           right:-250%;
-           transition: 6s;
+           /* display:none; */
+           height:98%;
+          right: -100%;
+           transition: 0.7s;
            background-color:black;
+           position:fixed;
+
            
            
        }
 
        #chk:checked ~ .navbar{
            display:block;
+           right: 0;
        }
        #chk:checked ~ .show-button{
            opacity: 0;
        }
 
        .navbar li a {
-        display: inline-block;
+           display: block;
+       margin-bottom: 0px;
         text-decoration: none;
         color: white; 
         letter-spacing: 2px;
         font-size: 25px;
        padding-bottom: 0px; 
-        margin-top: 40px;
+        margin-top: 70px;
         
 
        }
@@ -386,34 +404,32 @@
        
         width: 100%;
         background-color:black;
-        position: sticky;
+        /* position: sticky; */
         top: 0;
+        position: sticky;
+        height: 90px;
+        
        }
        .banner {
            display: flex;
-           
-           /* text-align: center;
-           align-items: center; */
-           margin-top: 15px;
            margin-bottom: 15px;
            background-size: cover;
            width: 100%;
-           height: 680px;
-
+           height: 570px;
        }
-
+    
        .description {
            color: rgb(0, 0, 0);
            font-size: 50px;
            font-weight: bolder;
-           position: absolute;
-           top: 100%;
+           position: absolute;;
+           top: 20%;
            left: 30px;
        }
-
+       
        h1 {
           text-align: center;
-           margin-top: 80px;
+           /* margin-top: 80px; */
            margin-bottom: 50px;
            font-size: 40px;
             
@@ -424,175 +440,117 @@
            display: flex;
            justify-content: space-around;
            width: 100%;
+            
        }
 
        #pic img {
-           margin-right: 10px;
-           margin-left: 10px;
-           border-radius: 50%;
+        border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            
+             
        }
 
        .about{
            width: 100%;
-           height: 640px;
-           display: flex;
+           height: 700px;
+           display:block;
            margin: 0px;
-           
-
+           border: 1px solid black;
        }
 
        .left {
 
-           float: left;
-           width: 50%;
-           height: 640px;
-           background-color: rgb(35, 151, 167);
-           color: white;
+            width: 100%;
+            height: 220px;
+            margin-bottom: 20px;
+           /* float: left;
+           height: 640px; */
+
            
        }
        .left p{
-        padding: 20px;
+            padding: 20px;
             font-size: 20px;
             word-spacing: 3px;
             text-align: justify;
-
+            
        }
        .right {
-           width: 50%;
-           height: 640px;
+           width: 100%;
+           height: 450px;
+           /* height: 640px;
            margin-left: 12px;
            display: flex;
-           float: right;   
+           float: right;    */      
           
+       }
+       .images2{
+           width: 100%;
+       }
+       #im1{
+           border: 1px solid red;
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p1.jpg');
+            background-size: cover;
+
+       }
+       #im2{
+           border: 1px solid red;
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p2.jpeg');
+            background-size: cover;
+
+       }
+       #im3{
+           border: 1px solid red;
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p3.jpg');
+            background-size: cover;
+
        }
        
-       .images2 img{
-
-           width: 100%;
-           height: 210px;
-          
-       }
 
 
-       .maindiv {
-          
-          
+       .maindiv {  
            display: block;
-           align-items: center;
-           
-           
+           align-items: center; 
 
        }
 
-       .box {
-          
-           background-color: rgb(68, 10, 63);
-           box-shadow: 4px 4px 4px 4px grey;
-           float: left;
-           width: 300px;
-           border-radius: 10px;
-           border: 2px solid greenyellow;
-           height: 100%;
-           margin-right: 10%;
-          
-           
-          
-          
-       }
-
-       .box-img img {
-           display: block;
-           margin-left: auto;
-           margin-right: auto;
-           margin-top: 15px;
-           border-radius: 10px;
-           width: 90%;
-           height: 170px;
-
-
-       }
-
-       .title h2 {
-           margin-top: 20px;
-           text-align: center;
-           width: 100%;
-           color: white;
-           font-weight: normal;
-
-
-       }
-
-       .description-cards {
-           padding: 20px;
-           color: greenyellow;
-           text-align: justify;
-           /* font-weight: 500; */
-           line-height: 20px;
-           margin: 2px;
-
-           /* height: 200px; */
-
-       }
-
-       .link {
-
-           /* display: block; */
-           /* box-sizing: border-box; */
-           background-color: white;
-           color: rgb(68, 10, 63);
-           margin-left: 10px;
-           margin-right: 10px;
-           height: 30px;
-           margin-bottom: 20px;
-           border-radius: 10px;
-           margin-top: 50px;
-
-       }
-
-       .link a {
-           padding: 5px;
-           margin-left: auto;
-           margin-right: auto;
-           text-align: center;
-           display: block;
-       }
-
-       .link a:hover {
-           background-color: yellowgreen;
-           cursor: pointer;
-           border-radius: 10px;
-           color: ivory;
-           font-weight: bolder;
-           transition: 1s;
-
-
-       }
-
-       .footer {
-           background-color: rgb(65, 206, 211);
-           text-align: center;
-           height: 110px;
-           width: 100%;
-       }
-
-       .text {
-           font-size: 30px;
-           text-align: center;
-           font-weight: bold;
-       }
-
-       .text a {
-           text-decoration: none;
-           font-size: 25px;
-       }
-
-       .text a:hover {
-           color: rgb(5, 114, 5);
-           text-decoration: underline;
-           font-family: cursive;
-       }
 
         }
+        @media (min-width: 913px) and (max-width: 1091px){
+            
+            .navbar li a{
+                    font-size: 23px;
+            }
+           .about{
+               width: 100%;
+           }
+           
+            #pic img {
+            
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 10%;
+
+        }
+
+        }
+
         
     </style>
 </head>
@@ -668,9 +626,9 @@
             </div>
             <div class="right">
                 <div class="images2">
-                    <div><img src="../images/p1.jpg"></div>
-                    <div><img src="../images/p2.jpeg"></div>
-                    <div><img src="../images/p3.jpg"></div>
+                    <div id="im1"><h2>Project-1</h2></div>
+                    <div id="im2"><h2>Project-2</h2></div>
+                    <div id="im3"><h2>Project-3</h2></div>
                 </div>
             </div>
         </div>
