@@ -328,11 +328,237 @@
             text-decoration: underline;
             font-family: cursive;
         }
-/* adding media query 1 */
+/* adding media query 1st */
+@media (min-width: 913px) and (max-width: 1091px){
+            
+            .navbar li a{
+                    font-size: 23px;
+            }
+           .about{
+               width: 100%;
+           }
+           
+            #pic img {
+            
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 10%;
 
-        @media(min-width: 402px) and (max-width: 913px)
+        }
+        }
+/* adding media query 2nd */
+        @media(min-width: 780px) and (max-width: 930px)
         {
         
+       .navbar li {
+           display: block;
+           line-height: 60px;
+          
+                
+       }
+       .show-button{
+           display: block;
+           position: relative;
+           right: 15px;
+           top: 0;     
+       }
+
+       
+       .hide-btn{
+           display: block;
+           position: absolute;
+           right: 15px;
+           top: 0;
+
+       }
+       .show-button,
+       .hide-btn:hover{
+           cursor: pointer;
+       }
+
+       .navbar {
+          
+
+           top: 0;
+            line-height: 90px;
+           align-items: center;
+           text-align: center;
+           width: 100%;
+           height:98%;
+          right: -100%;
+          margin: 0px 0px;
+           transition: 0.7s;
+           background-color:black;
+           position:fixed;
+
+           
+           
+       }
+
+       #chk:checked ~ .navbar{
+           display:block;
+           right: 0;
+       }
+       #chk:checked ~ .show-button{
+           opacity: 0;
+       }
+
+       .navbar li a {
+           display: block;
+       margin-bottom: 0px;
+        text-decoration: none;
+        color: white; 
+        letter-spacing: 2px;
+        font-size: 25px;
+       padding-bottom: 0px; 
+        margin-top: 70px;
+        
+
+       }
+
+       .navbar li a:hover {
+           color: black;
+           background-color: white;
+           width: 100%;
+           font-family:unset;
+
+
+       }
+       .header{
+       
+        width: 100%;
+        background-color:black;
+        top: 0;
+        position: sticky;
+        height: 90px;
+        
+       }
+       .banner {
+           display: flex;
+           margin-bottom: 15px;
+           background-size: cover;
+           width: 100%;
+           height: 570px;
+       }
+    
+       .description {
+           color: rgb(0, 0, 0);
+           font-size: 50px;
+           font-weight: bolder;
+           position: absolute;;
+           top: 20%;
+           left: 30px;
+       }
+       
+       h1 {
+          text-align: center;
+           /* margin-top: 80px; */
+           margin-bottom: 50px;
+           font-size: 40px;
+            
+
+       }
+
+       .team {
+           display: flex;
+           justify-content: space-around;
+           width: 100%;
+            
+       }
+
+       #pic img {
+        border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            
+             
+       }
+
+       .about{
+           width: 100%;
+           height: 750px;
+           display:block;
+           margin: 0px;
+           
+       }
+
+       .left {
+
+            width: 100%;
+            height: 220px;
+            margin-bottom: 20px;
+           /* float: left;
+           height: 640px; */
+
+           
+       }
+       .left p{
+            padding: 20px;
+            font-size: 20px;
+            word-spacing: 3px;
+            text-align: justify;
+            
+       }
+       .right {
+           width: 100%;
+           height: 450px;
+
+       }
+       .images2{
+           width: 100%;
+           margin-right: 13px;
+       }
+       #im1{
+           border: 2px solid rgb(136, 136, 16);
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p1.jpg');
+            background-size: cover;
+
+       }
+       #im2{
+           border: 2px solid palevioletred;
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p2.jpeg');
+            background-size: cover;
+
+       }
+       #im3{
+           border: 2px solid rgb(136, 136, 16);
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p3.jpg');
+            background-size: cover;
+
+       }
+       
+
+
+       .maindiv {  
+           display: block;
+           align-items: center; 
+
+       }
+       .box{
+    
+           margin-left: 50px;
+           margin-right: 50px;
+       }
+
+        }
+/* adding media query 3rd */      
+      @media(min-width:0px) and (max-width: 800px){
+          
        .navbar li {
            display: block;
            line-height: 60px;
@@ -453,11 +679,11 @@
 
        #pic img {
         border-radius: 50%;
-            height: 250px;
-            width: 250px;
+            height: 300px;
+            width: 300px;
             float: left;
             margin-bottom: 20px;
-            margin-left: 10%;
+            margin-left: 30%;
             
              
        }
@@ -537,32 +763,10 @@
        }
        .box{
     
-           margin-left: 50px;
-           margin-right: 50px;
+           margin-left: 30%;
+           margin-right: 30%;
        }
-
-        }
-        @media (min-width: 913px) and (max-width: 1091px){
-            
-            .navbar li a{
-                    font-size: 23px;
-            }
-           .about{
-               width: 100%;
-           }
-           
-            #pic img {
-            
-            border-radius: 50%;
-            height: 250px;
-            width: 250px;
-            float: left;
-            margin-bottom: 20px;
-            margin-left: 10%;
-
-        }
-
-        }
+      }
 
         
     </style>
