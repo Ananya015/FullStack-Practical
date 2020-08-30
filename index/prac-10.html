@@ -90,13 +90,15 @@
 
         }
         .side-bar{
-                margin-top:45px;
+                margin-top:31px;
                 width: 25%;
                 height: 80%;
                 position: fixed;
                 top: 70px;
-                background-color: #353b48;
-
+                background-color:rgba(8, 7, 7, 0.925);
+                left: -120%;
+                transition: .7s;
+                margin-left: 10px;
         }
         .side-bar ul{
             list-style: none;
@@ -122,10 +124,59 @@
         } */
         .side-bar ul li a:hover{
             border-left: 10px solid white;
-            background-color: rgb(10, 8, 8);
+            background-color: rgb(95, 95, 95);
             transition: .5s;
+            
         }
-        
+        .social{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 40px;
+            padding: 15px 25px;
+            margin-top:240px;
+            border-top: 2px solid rgb(255, 256, 255, 0.2);
+            border-bottom: 2px solid rgb(255, 256, 255, 0.2);
+        }
+        .side-bar i{
+            
+            color: white;
+            
+        }
+
+        .show,
+        .hide {
+            font-size: 40px;
+            color: white;
+            position: fixed;
+            top:30px;
+            left: 50px;
+            
+        }
+        .hide{
+            opacity: 0;
+        }
+        #check {
+            position:absolute;
+            visibility: hidden;
+            z-index:-2;
+        }
+
+        #check:checked ~ .side-bar{
+            left: 0;
+        }
+        #check:checked ~ .show{
+            opacity: 0;
+        }
+        #check:checked ~ .hide{
+            opacity: 1;
+
+        }
+        @media(max-width: 768px){
+            .side-bar{
+                width: 100%;
+            }
+        }
         .banner {
             display: flex;
             margin-top: 15px;
@@ -417,7 +468,7 @@
           right: -100%;
           margin: 0px 0px;
            transition: 0.7s;
-           background-color:black;
+           background-color:rgba(8, 7, 7, 0.925);
            position:fixed;
 
            
@@ -624,7 +675,7 @@
           right: -100%;
           margin: 0px 0px;
            transition: 0.7s;
-           background-color:black;
+           background-color:rgba(8, 7, 7, 0.925);
            position:fixed;
 
            
@@ -664,7 +715,7 @@
        .header{
        
         width: 100%;
-        background-color:black;
+        background-color:rgba(8, 7, 7, 0.925);
         /* position: sticky; */
         top: 0;
         position: sticky;
@@ -841,15 +892,30 @@
                 </label>
             </ul>
         </div>
+        <input type="checkbox" name="" id="check" />
+
+        <label for="check" class="show">
+            <i class="fa fa-caret-right"></i></i>
+        </label>
+
+        <label for="check" class="hide">
+            <i class="fa fa-times"></i>
+        </label>
 
         <div class="side-bar">
             <ul>
                 <li><a href="#"><i class ="fa fa-home"><span>Home</span></i></a></li>
                 <li><a href="#"><i class ="fa fa-tasks"><span>Services</span></i></a></li>
-                <li><a href="#"><i class ="fa fa-linkedin"><span>Linkenden</span></i></a></li>
+                <li><a href="#"><i class ="fa fa-linkedin-square"><span>Linkenden</span></i></a></li>
                 <li><a href="#"><i class ="fa fa-github"><span>github</span></i></a></li>
                 <li><a href="#"><i class ="fa fa-id-card"><span>Contact</span></i></a></li>
             </ul>
+            <div class="social">
+                <a href=""><i class="fa fa-facebook-square"></i></a>
+                <a href=""><i class="fa fa-youtube-square"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+               
+            </div>
         
         </div>
 
