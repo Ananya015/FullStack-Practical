@@ -5,7 +5,792 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-10</title>
     <style>
+
+* {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 200px;
+        }
+
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+        .show-button,
+        .hide-btn
+        {
+            font-size:30px;
+            color:white;
+            line-height:90px;
+            display:none;
+
+        }
+        #chk{
+            position:absolute;
+            visibility: hidden;
+            z-index:-2;
+        }
+
+        .show-button{
+            float:right;
+        }
+
+        body {
+            margin: 10px;
+           
+        }
+
+        .header {
+            height: 90px;
+            width: 100%;
+            background-color: rgba(8, 7, 7, 0.925);
+            position: sticky;
+            top:0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            line-height: 90px;
+                 
+        }
+
+        .navbar {
+            list-style: none;
+            float: right;
+            padding:0 20px;  
+            
+        }
+
+        .navbar li a {
+
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 30px;
+            padding:0 20px;  
+
+
+        }
+
+        .navbar li a:hover {
+            color: black;
+            font-family: cursive;
+            background-color: white;
+            padding: 10px;
+
+
+        }
+
+        .banner {
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 100%;
+           height: 100vh;                
+        }
+        .image{
+            background-image: url('../images/wallpap.jpg');
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
         
+         .description{
+            color: rgb(2, 2, 2);
+            font-size: 50px;
+            font-weight: bolder;
+            position:absolute;
+            margin: 20px 20px;
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: rgb(2, 2, 2);
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            /* margin: 0px; */
+        }
+                      
+
+        #pic img {
+           
+            margin-right: 60px;
+            margin-left: 60px;
+            border-radius: 50%;
+        }
+
+        .about {
+            width: 100%;
+            height: 640px;
+            display: flex;
+            margin: 0px;
+           overflow:hidden;
+           
+
+        }
+
+        .left {
+
+            float: left;
+            width:50%;
+            height: 600px;
+            background-color: rgb(35, 151, 167);
+            text-align: justify;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            word-spacing: 3px;
+            overflow:scroll;
+        }
+
+        .right {
+            width:50%;
+            height: 640px;
+            display: flex;
+            float: right;
+            justify-content: space-around;
+
+        }
+
+        .images2{
+            height: 213px;
+            width: 100%;
+            float: right;
+            padding-left: 30px;
+            margin-bottom: 30px;
+            
+            
+        }
+        #im1{
+           border: 2px solid rgb(136, 136, 17);
+           height:190px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p1.jpg');
+            background-size: cover;
+
+       }
+       #im2{
+           border: 2px solid palevioletred;
+           height:190px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p2.jpeg');
+            background-size: cover;
+
+       }
+       #im3{
+           border: 2px solid rgb(136, 136, 17);
+           height:190px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p3.jpg');
+            background-size: cover;
+
+       }
+
+        .maindiv {
+            justify-content: space-around;
+            display: flex;
+            display: block;
+            width: 100%;
+            float: left;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+
+        .box {
+            /* display:inline-flexbox; */
+            background-color: rgb(68, 10, 63);
+            box-shadow: 4px 4px 4px 4px grey;
+            float: left;
+            display: block;
+            width: 300px;
+            border-radius: 10px;
+            margin: 30px;
+            border: 2px solid greenyellow;
+            height: 100%;
+            /* height:570px; */
+        }
+
+        .box-img img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 90%;
+            height: 170px;
+
+
+        }
+
+        .title h2 {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-weight: normal;
+
+
+        }
+
+        .description-cards {
+            padding: 20px;
+            color: greenyellow;
+            text-align: justify;
+            /* font-weight: 500; */
+            line-height: 20px;
+            margin: 2px;
+
+            /* height: 200px; */
+
+        }
+
+        .link {
+
+            /* display: block; */
+            /* box-sizing: border-box; */
+            background-color: white;
+            color: rgb(68, 10, 63);
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+
+        .link a {
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display: block;
+        }
+
+        .link a:hover {
+            background-color: yellowgreen;
+            cursor: pointer;
+            border-radius: 10px;
+            color: ivory;
+            font-weight: bolder;
+            transition: 1s;
+
+
+        }
+
+        .footer {
+            background-color: rgb(65, 206, 211);
+            text-align: center;
+            height: 110px;
+            width: 100%;
+        }
+
+        .text {
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text a {
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .text a:hover {
+            color: rgb(5, 114, 5);
+            text-decoration: underline;
+            font-family: cursive;
+        }
+/* adding media query 1 */
+@media (min-width: 913px) and (max-width: 1091px){
+            
+            .navbar li a{
+                    font-size: 23px;
+            }
+           .about{
+               width: 100%;
+           }
+           
+            #pic img {
+            
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 10%;
+
+        }
+        }
+/* adding media query 2 */
+        @media(min-width: 780px) and (max-width: 930px)
+        {
+        
+       .navbar li {
+           display: block;
+           line-height: 60px;
+          
+                
+       }
+       .show-button{
+           display: block;
+           position: relative;
+           right: 15px;
+           top: 0;     
+       }
+
+       
+       .hide-btn{
+           display: block;
+           position: absolute;
+           right: 15px;
+           top: 0;
+
+       }
+       .show-button,
+       .hide-btn:hover{
+           cursor: pointer;
+       }
+
+       .navbar {
+          
+
+           top: 0;
+            line-height: 90px;
+           align-items: center;
+           text-align: center;
+           width: 100%;
+           height:98%;
+          right: -100%;
+          margin: 0px 0px;
+           transition: 0.7s;
+           background-color:black;
+           position:fixed;
+
+           
+           
+       }
+
+       #chk:checked ~ .navbar{
+           display:block;
+           right: 0;
+       }
+       #chk:checked ~ .show-button{
+           opacity: 0;
+       }
+
+       .navbar li a {
+           display: block;
+       margin-bottom: 0px;
+        text-decoration: none;
+        color: white; 
+        letter-spacing: 2px;
+        font-size: 25px;
+       padding-bottom: 0px; 
+        margin-top: 70px;
+        
+
+       }
+
+       .navbar li a:hover {
+           color: black;
+
+           background-color: white;
+           width: 100%;
+           font-family:unset;
+
+
+       }
+       .header{
+       
+        width: 100%;
+        background-color:black;
+        top: 0;
+        position: sticky;
+        height: 90px;
+        
+       }
+       .banner {
+           display: flex;
+           margin-bottom: 15px;
+           background-size: cover;
+           width: 100%;
+           height: 570px;
+       }
+    
+       .description {
+           color: rgb(0, 0, 0);
+           font-size: 50px;
+           font-weight: bolder;
+           position: absolute;;
+           top: 20%;
+           left: 30px;
+       }
+       
+       h1 {
+          text-align: center;
+           /* margin-top: 80px; */
+           margin-bottom: 50px;
+           font-size: 40px;
+            
+
+       }
+
+       .team {
+           display: flex;
+           justify-content: space-around;
+           width: 100%;
+            
+       }
+
+       #pic img {
+        border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            
+             
+       }
+
+       .about{
+           width: 100%;
+           height: 750px;
+           display:block;
+           margin: 0px;
+           
+       }
+
+       .left {
+
+            width: 100%;
+            height: 220px;
+            margin-bottom: 20px;
+           /* float: left;
+           height: 640px; */
+
+           
+       }
+       .left p{
+            padding: 20px;
+            font-size: 20px;
+            word-spacing: 3px;
+            text-align: justify;
+            
+       }
+       .right {
+           width: 100%;
+           height: 450px;
+
+       }
+       .images2{
+           width: 100%;
+           margin-right: 13px;
+       }
+       #im1{
+           border: 2px solid rgb(136, 136, 16);
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p1.jpg');
+            background-size: cover;
+
+       }
+       #im2{
+           border: 2px solid palevioletred;
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p2.jpeg');
+            background-size: cover;
+
+       }
+       #im3{
+           border: 2px solid rgb(136, 136, 16);
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p3.jpg');
+            background-size: cover;
+
+       }
+       
+
+
+       .maindiv {  
+           display: block;
+           align-items: center; 
+
+       }
+       .box{
+    
+           margin-left: 50px;
+           margin-right: 50px;
+       }
+
+        }
+/* adding media query 3rd */      
+      @media(min-width:0px) and (max-width: 800px){
+          
+       .navbar li {
+           display: block;
+           line-height: 60px;
+          
+                
+       }
+       .show-button{
+           display: block;
+           position: relative;
+           right: 15px;
+           top: 0;     
+       }
+
+       
+       .hide-btn{
+           display: block;
+           position: absolute;
+           right: 15px;
+           top: 0;
+
+       }
+       .show-button,
+       .hide-btn:hover{
+           cursor: pointer;
+       }
+
+       .navbar {
+          
+
+           top: 0;
+            line-height: 90px;
+           align-items: center;
+           text-align: center;
+           width: 100%;
+           height:98%;
+          right: -100%;
+          margin: 0px 0px;
+           transition: 0.7s;
+           background-color:black;
+           position:fixed;
+
+           
+           
+       }
+
+       #chk:checked ~ .navbar{
+           display:block;
+           right: 0;
+       }
+       #chk:checked ~ .show-button{
+           opacity: 0;
+       }
+
+       .navbar li a {
+           display: block;
+       margin-bottom: 0px;
+        text-decoration: none;
+        color: white; 
+        letter-spacing: 2px;
+        font-size: 25px;
+       padding-bottom: 0px; 
+        margin-top: 70px;
+        
+
+       }
+
+       .navbar li a:hover {
+           color: black;
+           /* font-family: cursive; */
+           background-color: white;
+           width: 100%;
+           font-family:unset;
+
+
+       }
+       .header{
+       
+        width: 100%;
+        background-color:black;
+        /* position: sticky; */
+        top: 0;
+        position: sticky;
+        height: 90px;
+        
+       }
+       .banner {
+           display: flex;
+           margin-bottom: 15px;
+           background-size: cover;
+           width: 100%;
+           height: 570px;
+       }
+    
+       .description {
+           color: rgb(0, 0, 0);
+           font-size: 50px;
+           font-weight: bolder;
+           position: absolute;;
+           top: 20%;
+           left: 30px;
+       }
+       
+       h1 {
+          text-align: center;
+           /* margin-top: 80px; */
+           margin-bottom: 50px;
+           font-size: 40px;
+            
+
+       }
+
+       .team {
+           display: flex;
+           justify-content: space-around;
+           width: 100%;
+            
+       }
+
+       #pic img {
+        border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 30%;
+            
+             
+       }
+
+       .about{
+           width: 100%;
+           height: 750px;
+           display:block;
+           margin: 0px;
+           
+       }
+
+       .left {
+
+            width: 100%;
+            height: 220px;
+            margin-bottom: 20px;
+           /* float: left;
+           height: 640px; */
+
+           
+       }
+       .left p{
+            padding: 20px;
+            font-size: 20px;
+            word-spacing: 3px;
+            text-align: justify;
+            
+       }
+       .right {
+           width: 100%;
+           height: 450px;
+           /* height: 640px;
+           margin-left: 12px;
+           display: flex;
+           float: right;    */      
+          
+       }
+       .images2{
+           width: 100%;
+           margin-right: 13px;
+       }
+       #im1{
+           border: 2px solid rgb(136, 136, 16);
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p1.jpg');
+            background-size: cover;
+
+       }
+       #im2{
+           border: 2px solid palevioletred;
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p2.jpeg');
+            background-size: cover;
+
+       }
+       #im3{
+           border: 2px solid rgb(136, 136, 16);
+           height:150px;
+           width: 100%;
+           margin-bottom: 10px;
+            background-image: url('../images/p3.jpg');
+            background-size: cover;
+
+       }
+       
+
+
+       .maindiv {  
+           display: block;
+           align-items: center; 
+
+       }
+       .box{
+    
+           margin-left: 30%;
+           margin-right: 30%;
+       }
+      }
+
+/* adding media query 4th */
+    @media screen and (max-width: 503px){
+        
+        .box{
+    
+            margin-left: 45px;
+            margin-right: 0px;
+         }
+         #pic img {
+        
+            height: 250px;
+            width: 250px;
+            float: left;
+            margin-left: 70px;
+            margin-right: 0px;
+                 
+       }
+       .footer{
+           width: 98%;
+           margin: 0px;
+       }
+    }
+        
+
     </style>
 </head>
 <body>
