@@ -14,37 +14,74 @@
         }
         table{
             margin: 70px auto;
-            border: 1px solid black;
+            border: 2px solid rgb(102, 14, 14);
             width: 80%;
             border-radius: 10px;
+            
            
         }
-        tr,td {
-            border-bottom: 1px solid rgb(151, 76, 76);
+        tr,
+        td {
+            border-bottom: 2px solid rgb(102, 14, 14);
             border-collapse: collapse;
             padding: 15px;
             font-size: 15px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            
             
         }
+       
         .stts{
             color: green;
             font-weight: 600;
         }
-        
+        .topic{
+            background: rgb(102, 14, 14);
+            color: white;
+            font-weight: 650;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+
+        }
+        .heading{
+            background: rgb(85, 17, 85);
+            padding: 20px;
+            color: white;
+            border-bottom: 2px solid purple;
+            
+        }
+        .fa-pencil:hover{
+            color: rgb(70, 207, 200);
+        }
+        .fa-trash:hover{
+            color: rgb(238, 30, 30);
+        }
+       
     </style>
 </head>
 <body>
-    
+   
     <table >
-        
-            <tr class="heading">    
-                <colgroup colspan="5">
-                    <th>#</th>
-                    <th>Practical Name</th>
-                    <th>Link</th>
-                    <th>Status</th>
-                    <th>Tools</th>
-                </colgroup>    
+        <thead>
+        <tr class="topic" >    
+           
+                <td colspan="5" style="font-size: 15px; text-align: center;"> 
+                    FullStack Live Practical Book
+                </td>    
+
+        </tr>
+        </thead>
+            <tr>    
+                
+                    <th  class="heading">#</th>
+                    <th  class="heading">Practical Name</th>
+                    <th  class="heading">Link</th>
+                    <th  class="heading">Status</th>
+                    <th  class="heading">Tools</th>
+                 
             </tr>
 
             <tr>
