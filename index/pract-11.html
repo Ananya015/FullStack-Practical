@@ -15,14 +15,12 @@
         table{
             margin: 70px auto;
             border: 2px solid rgb(102, 14, 14);
-            width: 85%;
-            border-radius: 10px;
-            
-           
+            width: 85%;     
+       
         }
         tr,
         td {
-            border-bottom: 2px solid rgb(102, 14, 14);
+            border-bottom: 2px solid rgb(136, 74, 74);
             border-collapse: collapse;
             padding: 15px;
             font-size: 18px;
@@ -38,7 +36,7 @@
             font-weight: 600;
         }
         .topic{
-            background: rgb(102, 14, 14);
+            background: rgb(136, 74, 74);
             color: white;
             font-weight: 650;
             text-transform: uppercase;
@@ -55,6 +53,8 @@
         }
         .fa-pencil:hover{
             color: rgb(70, 207, 200);
+            
+            
         }
         .fa-trash:hover{
             color: rgb(238, 30, 30);
@@ -67,17 +67,20 @@
         }
         a{
             text-decoration: none;
-            color: black;
+            color:black;
         }
         a:hover{
-            color: darkgoldenrod;
+            color:rgb(146, 131, 47);
+            text-decoration:underline;
         }
-        
+        tr:hover{
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
    
-    <table >
+    <table cellspacing=0 cellpadding=0>
         <thead>
         <tr class="topic" >    
            
@@ -88,12 +91,13 @@
         </tr>
         </thead>
             <tr>    
-                
+                    
                     <th  class="heading">#</th>
                     <th  class="heading">Practical Name</th>
                     <th  class="heading">Link</th>
                     <th  class="heading">Status</th>
                     <th  class="heading">Tools</th>
+                
                  
             </tr>
 
