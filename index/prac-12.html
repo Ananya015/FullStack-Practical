@@ -21,11 +21,31 @@
             padding: 10px;
             background-color: honeydew;
             margin: 20px auto;
+            
         }
         .customer-table{
             width: 100%;
             margin: 0 auto;
             border-collapse: collapse;
+            
+        }
+        .customer-table td, .customer-table th {
+            width: 150px;
+            padding: 8px 5px;
+            text-align: center;
+             margin-right: 10px;
+        }
+        .customer-table th{
+            height: 70px;
+            color: rgb(7, 53, 153);
+            font-size: 25px;
+            
+        }
+        i{
+            margin-right: 10px;
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(233, 228, 180);
         }
         .basic{
             background-color:rgb(163, 241, 215);
@@ -54,7 +74,7 @@
             <colgroup class="proc"></colgroup>
             
                 <thread>
-                    <tr>
+                    <tr style="background-color: rgb(70, 184, 59);">
                         <th>
                             <i class="fa fa-building"></i>Basic
                         </th>
