@@ -6,7 +6,39 @@
     <title>Practical-12</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
-        
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-width: 100%;
+            background-color: rgb(173, 173, 173);
+        }
+        .wrapper{
+            width: 600px;
+            padding: 10px;
+            background-color: honeydew;
+            margin: 20px auto;
+        }
+        .customer-table{
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .basic{
+            background-color:rgb(163, 241, 215);
+        }
+        .plus{
+            background-color:rgb(78, 78, 216);
+        }
+        .delux{
+            background-color:rgb(203, 152, 216);
+        }
+        .proc{
+            background-color:rgb(184, 184, 85);
+        }
     </style>
 </head>
 <body>
@@ -16,7 +48,11 @@
             Select Your Plan
         </h2>
         <table class="customer-table">
-            <table>
+            <colgroup class="basic"></colgroup>
+            <colgroup class="plus"></colgroup>
+            <colgroup class="delux"></colgroup>
+            <colgroup class="proc"></colgroup>
+            
                 <thread>
                     <tr>
                         <th>
