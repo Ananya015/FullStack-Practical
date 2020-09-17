@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(248, 248, 175, 0.699);
+    background:linear-gradient(to left,rgb(241, 240, 125),rgb(241, 167, 179));
     margin: 0;
     padding: 0;
 
@@ -13,6 +13,10 @@ body{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-shadow: 2px 3px #ff00b3;
+    color: rgb(68, 4, 54);
 }
 .container{
     display: flex;
@@ -28,7 +32,7 @@ body{
 .form-1 .sec-1{
     display: flex;
     flex-direction: column;
-    background-color: rgba(10, 10, 161, 0.842);
+    background:linear-gradient(to right,rgba(30, 30, 233, 0.808),rgb(112, 199, 233));
     text-align: center;
     justify-items: center;
     align-items: center;
