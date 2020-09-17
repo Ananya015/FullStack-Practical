@@ -51,19 +51,20 @@ body{
 }
 .input-template-1{
     padding-left: 10px;
+    padding-right: 10px;
     
 }
 .input-template-1 input{
     border: none;
     background: transparent;
     padding: 10px;
-    width: 90%;
+    width: 100%;
    font-style: italic;
 }
 
 .input-template-1 div{
     border-bottom: 1px solid rgba(95, 95, 95, 0.815);
-    padding-right: 5px;
+    
 }
 
 .forgot-template-1 a{
@@ -118,4 +119,19 @@ body{
     margin-bottom: 10px;
     font-weight: 300;
     margin: 25px;
+}
+.input-template-2{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.input-template-2 input{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    width: 100%;
+   font-style: italic;
+}
+.input-template-2 div{
+    border-bottom: 1px solid rgba(95, 95, 95, 0.815);
 }
