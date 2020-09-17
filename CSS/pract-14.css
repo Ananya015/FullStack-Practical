@@ -5,6 +5,9 @@
 }
 body{
     background-color: rgba(248, 248, 175, 0.699);
+    margin: 0;
+    padding: 0;
+
 }
 .main-heading{
     text-align: center;
@@ -52,30 +55,30 @@ body{
 }
 .input-template-1 input{
     border: none;
-    background-color: rgba(158, 221, 240, 0.877);
-}
-
-.input-template-1 div{
-    color: #000;
-    margin-bottom: 10px;
-}
-.input-template-1 input{
+    background: transparent;
     padding: 10px;
     width: 90%;
    font-style: italic;
 }
+
+.input-template-1 div{
+    border-bottom: 1px solid rgba(95, 95, 95, 0.815);
+    padding-right: 5px;
+}
+
 .forgot-template-1 a{
     float: right;
     padding-right: 10px;
     color: black;
     text-decoration: none;
+    margin-top: 30px;
 }
 .forgot-template-1 a:hover{
     text-decoration: underline;
     color: blue;
 }
 .footer{
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 25px;
     display: flex;
     justify-content: space-around;
@@ -86,11 +89,14 @@ body{
     border-radius: 10px;
     background-color: rgb(59, 54, 54);
     color: white;
-    margin: 20px;
+    margin: 10px;
+    border: 2px solid rgb(59, 54, 54);
+    
+
 }
 .footer input:hover{
     background-color: rgb(255, 0, 0);
-    border: none;
+    border: 2px solid red;
 }
 .footer label a{
     color: black;
@@ -99,4 +105,17 @@ body{
 .footer label a:hover{
     color: blue;
     text-decoration: underline;
+}
+/* css for 2nd */
+.form-2{
+    width: 30%;
+    background-color: rgb(247, 247, 149);
+    box-shadow: rgb(185, 185, 185) 2px 2px 2px 2px;
+}
+.sec-2 h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+    margin: 25px;
 }
