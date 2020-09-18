@@ -212,6 +212,9 @@ body{
     text-decoration: none;
     margin-top: 25px;
 }
+.forgot-template-3 a:hover{
+    text-decoration: underline;
+}
 .btn-template-3{
     text-align: center;
 
@@ -224,7 +227,14 @@ body{
     color: white;
     border-radius: 30px;
     width: 90%;
+    font-weight: 700;
     
+}
+.btn-template-3 input:hover{
+    background-color:rgb(221, 255, 228) ;
+    color: green;
+    cursor: pointer;
+
 }
 .with{
     text-align: center;
