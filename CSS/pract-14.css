@@ -168,3 +168,65 @@ body{
     color: white;
 
 }
+/* css for 3rd */
+.form-3{
+    width: 30%;
+    background-color: rgb(221, 255, 228);
+    box-shadow: rgb(185, 185, 185) 2px 2px 2px 2px;
+}
+.sec-3 h3{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 300;
+  margin: 25px;
+  color: rgb(5, 88, 5);
+}
+.input-template-3{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.input-template-3 label{
+    color: rgb(5, 88, 5);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+
+.input-template-3 input{
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+   width: 100%;
+    font-style: italic;
+    padding: 10px;
+}
+.input-template-3 div{
+    border-bottom: 1px solid rgba(95, 95, 95, 0.815);
+    margin-bottom: 10px;
+}
+.forgot-template-3 a{
+    float: right;
+    padding-right: 10px;
+    color: rgb(5, 88, 5);
+    text-decoration: none;
+    margin-top: 30px;
+}
+.btn-template-3{
+    text-align: center;
+
+}
+.btn-template-3 input{
+    
+    padding: 10px 20px;
+   margin-top: 60px;
+    background-color: rgb(5, 88, 5);
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    
+}
+.with{
+    text-align: center;
+    margin-top: 15px;
+}
