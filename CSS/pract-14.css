@@ -64,6 +64,13 @@ body{
     padding: 10px;
     width: 100%;
    font-style: italic;
+   
+}
+.input-template-1 input:focus{
+    border-bottom: blue;
+    outline: none;
+    border-bottom-style: solid;
+    margin-top: 5px;
 }
 
 .input-template-1 div{
@@ -135,6 +142,11 @@ body{
     padding: 10px;
     width: 100%;
    font-style: italic;
+}
+.input-template-2 input:focus{
+    outline: none;
+    border-bottom-style: solid;
+    margin-top: 5px;
 }
 .input-template-2 div{
     border-bottom: 1px solid rgba(95, 95, 95, 0.815);
@@ -211,6 +223,12 @@ body{
    width: 100%;
     font-style: italic;
     padding: 10px;
+}
+.input-template-3 input:focus{
+    border-bottom: rgb(5, 88, 5);
+    outline: none;
+    border-bottom-style: solid;
+    margin-top: 5px;
 }
 .input-template-3 div{
     border-bottom: 1px solid rgba(95, 95, 95, 0.815);
