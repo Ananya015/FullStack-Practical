@@ -12,7 +12,7 @@ body{
 .main-heading{
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
     text-shadow: 2px 3px #ff00b3;
@@ -270,4 +270,21 @@ body{
     background: white;
     color: green;
     cursor: pointer;
+}
+
+/* adding media query */
+
+@media (max-width:845px){
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-1,
+    .form-2,
+    .form-3{
+        width: 70%;
+        margin: 30px;
+    }
 }
