@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 body{
-    background-color: chocolate;
+    background-color: rgb(211, 128, 68);
    
+}
+#container{
+    text-align: center;
+}
+
+#heading h1{
+    font-size: 40px;
+    line-height: 50vh;
+}
+#counter{
+    
+    display: flex;
+    justify-content: center;
+
 }
