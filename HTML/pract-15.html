@@ -12,10 +12,48 @@
             <h1>COUNTER</h1>
         </div>
         <div id="counter">
-                <button id="left-btn">-</button>
+                <button id="left-btn" onclick="decre()">-</button>
                 <div id="num">0</div>
-                <button id="right-btn">+</button>
+                <button id="right-btn" onclick="incre()">+</button>
         </div>
     </div>
+
+
+    <script>
+       
+        
+       var num = 0;
+
+      document.getElementById("left-btn").disabled = true;
+      document.getElementById("left-btn").style.backgroundColor = " rgb(170, 170, 253)";
+       
+
+      function incre() {
+        document.getElementById("left-btn").disabled = false;
+        document.getElementById("left-btn").style.backgroundColor = " rgb(94, 134, 209)";
+         
+        num++;
+        document.getElementById("num").innerHTML = num;
+      }
+
+
+      function decre() {
+        if (num === 0) {
+          document.getElementById("left-btn").disabled = true;
+          document.getElementById("left-btn").style.backgroundColor = " rgb(170, 170, 253)";
+           
+        } else {
+          num--;
+          document.getElementById("num").innerHTML = num;
+        }
+
+        if (num === 0) {
+          document.getElementById("left-btn").disabled = true;
+          document.getElementById("left-btn").style.backgroundColor = " rgb(170, 170, 253)";
+           
+        }
+      }
+
+    </script>
 </body>
 </html>
