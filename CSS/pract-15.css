@@ -16,8 +16,32 @@ body{
     line-height: 50vh;
 }
 #counter{
-    
+
     display: flex;
     justify-content: center;
+   
 
+}
+#left-btn,
+#right-btn,
+#num{
+    font-size: 50px;
+    padding-right:40px;
+    padding-left:40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    
+}
+#left-btn,
+#right-btn{
+    background-color: rgb(94, 134, 209);
+    box-shadow: 2px 2px 2px 2px black;
+    border: none;
+}
+#left-btn:hover,
+#right-btn:hover{
+    background-color: darkgray;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgb(95, 95, 95);
+    border: none;
 }
