@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(100deg,rgb(77, 172, 189),rgb(209, 36, 36));
+    background: linear-gradient(110deg,rgb(248, 179, 233),rgb(100, 3, 84));
     min-height: 100vh;
 }
 h1,form{
@@ -24,5 +24,17 @@ form button{
  outline: none;
  border: none;
  background: white;
+}
+
+form button{
+   
+    background-color: white;
+    cursor: pointer;
+     
+}
+form button:hover{
+    
+    background-color: skyblue;
+    color: white;
 }
 
