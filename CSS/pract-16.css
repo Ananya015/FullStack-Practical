@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(100deg,rgb(77, 172, 189),rgb(209, 36, 36));
+    min-height: 100vh;
+}
