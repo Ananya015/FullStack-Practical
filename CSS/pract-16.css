@@ -63,5 +63,19 @@ form button:hover{
     flex: 1;
     margin: 0 8px;
 }
+.chk-btn{
+    background-color: green;
+    color: white;
+    outline: none;
+   padding: 10px;
+   font-size: 15px;
+}
+.del-btn{
+    background-color: red;
+    color: white;
+    outline: none;
+   padding: 10px;
+   font-size: 15px;
+}
 
 
