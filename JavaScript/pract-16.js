@@ -14,7 +14,7 @@ function create(e){
 
     var newli = document.createElement("li");
     newli.classList.add("todo-li");
-    newli.innerHTML="List";
+    newli.innerHTML=todoInput.value;
 
     newDiv.appendChild(newli);
 
