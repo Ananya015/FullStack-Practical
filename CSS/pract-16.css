@@ -78,4 +78,9 @@ form button:hover{
    font-size: 15px;
 }
 
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+
+}
 

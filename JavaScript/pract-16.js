@@ -30,9 +30,21 @@ function create(e){
 
      todoList.appendChild(newDiv);
 
-     todoList.onclick=chkdel;
+     todoList.onclick = chkdel;
 
-     function chkdel(e){
-          console.log(e.target); 
+     function chkdel(e)
+     {
+         var item = e.target; 
+         if(item.classList[0] === "del-btn")
+         {
+             var parent = item.parentNode;
+             parent.remove();
+         }
+         if(item.classList[0]=== "chk-btn"){
+             var parent =item.parentNode;
+             parent.classList.toggle("done");
+         }
      }
+
+
 }
