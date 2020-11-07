@@ -3,12 +3,13 @@ var todoInput = document.querySelector(".todo-input");
 var todobtn = document.querySelector(".todo-btn");
 var todoList = document.querySelector(".todo-list");
 
-
 todobtn.onclick = create;
 
+ 
 function create(e){ 
     e.preventDefault();
 
+    if(todoInput.value){
     var newDiv = document.createElement("div");
     newDiv.classList.add("todo");
 
@@ -46,5 +47,9 @@ function create(e){
          }
      }
 
-
+    }
+    else{
+        alert("Field can't be empty. Enter value");
+    }
+    
 }
