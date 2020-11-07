@@ -29,4 +29,10 @@ function create(e){
      newDiv.appendChild(delbtn);
 
      todoList.appendChild(newDiv);
+
+     todoList.onclick=chkdel;
+
+     function chkdel(e){
+          console.log(e.target); 
+     }
 }
