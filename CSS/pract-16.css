@@ -83,4 +83,7 @@ form button:hover{
     pointer-events: none;
 
 }
-
+.done{
+    text-decoration: line-through;
+    opacity: .5;
+}
