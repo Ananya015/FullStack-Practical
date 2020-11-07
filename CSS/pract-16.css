@@ -47,7 +47,7 @@ form button:hover{
 }
 .todo-list{
     list-style: none;
-    width: 24%;
+    min-width: 24%;
 }
 .todo{
 
@@ -87,3 +87,5 @@ form button:hover{
     text-decoration: line-through;
     opacity: .5;
 }
+
+
