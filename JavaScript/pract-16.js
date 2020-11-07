@@ -28,6 +28,7 @@ function create(e){
      delbtn.classList.add("del-btn");
      delbtn.innerHTML='<i class= "fa fa-trash"></i>';
      newDiv.appendChild(delbtn);
+     todoInput.value="";
 
      todoList.appendChild(newDiv);
 
