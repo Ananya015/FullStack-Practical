@@ -26,4 +26,22 @@ function addZero(n)
     return((parseInt(n,10)<10 ? '0': '')+n);
 
 }
+
+
+
+function Greet()
+{
+    let today = new Date();
+    let hour = today.getHours();
+
+    if(hour<12){
+        document.body.style.backgroundImage;
+    }
+}
+
+
+
+
+
 currenttime();
+Greet();
