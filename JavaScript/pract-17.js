@@ -15,9 +15,15 @@ function currenttime(){
 
      hour = hour%12 || 12;
      
-     time.innerHTML = `${hour}<span>:</span>${min}<span>:</span>${sec} ${ampM}`;
+     time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${ampM}`;
 
      setTimeout(currenttime,1000)
+
+}
+
+function addZero(n)
+{
+    return((parseInt(n,10)<10 ? '0': '')+n);
 
 }
 currenttime();
