@@ -50,6 +50,7 @@ function Greet()
         document.body.style.backgroundImage='url("../images/gn.jpeg")';
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize="cover";
+
         greeting.innerHTML="Good Night";
         document.body.style.color="white";
     }
