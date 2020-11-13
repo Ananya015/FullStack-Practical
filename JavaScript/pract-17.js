@@ -38,7 +38,6 @@ function Greet()
         document.body.style.backgroundImage='url("../images/morning.jpeg")';
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize="cover";
-        
         greeting.innerHTML="Good Morning";
     }
     else if(hour<18){
@@ -52,6 +51,7 @@ function Greet()
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize="cover";
         greeting.innerHTML="Good Night";
+        document.body.style.color="white";
     }
 }
 
