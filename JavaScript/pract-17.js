@@ -38,6 +38,7 @@ function Greet()
         document.body.style.backgroundImage='url("../images/morning.jpeg")';
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize="cover";
+        document.body.style.backgroundPosition="center";
         greeting.innerHTML="Good Morning";
     }
     else if(hour<18){
