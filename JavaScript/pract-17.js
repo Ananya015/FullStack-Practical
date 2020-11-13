@@ -3,6 +3,8 @@ const time = document.getElementById('time');
 const greeting = document.getElementById('greeting');
 const name = document.getElementById('name');
 
+name.addEventListener("keypress",setName);
+name.addEventListener("blur",setName);
 
 function currenttime(){
     let today = new Date();
@@ -57,5 +59,35 @@ function Greet()
     }
 }
 
+
+function getName()
+{
+    if(localStorage.getItem("myKeyname")===null){
+        name.innerHTML='[Enter Name]';
+    }
+    else{
+        name.innerHTML = localStorage.getItem("myKeyname");
+    }
+
+}
+
+
+function setName(e)
+{
+    if(e.type === "keypress")
+    {
+        if(e.keyCode==13)
+        {
+            localStorage.setItem("myKeyname",e.target.innerHTML);
+            name.blur();
+        }
+    }
+    else{
+        localStorage.setItem("myKeyname",e.target.innerHTML);
+    }
+}
+
+
 currenttime();
 Greet();
+getName();
