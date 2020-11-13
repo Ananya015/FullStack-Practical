@@ -2,6 +2,7 @@
 const time = document.getElementById('time');
 const greeting = document.getElementById('greeting');
 const name = document.getElementById('name');
+const date = document.getElementById('date');
 
 name.addEventListener("keypress",setName);
 name.addEventListener("blur",setName);
@@ -11,14 +12,13 @@ function currenttime(){
     let hour = today.getHours();
     let min = today.getMinutes();
     let sec = today.getSeconds();
-
-
+    let tdate = today.toDateString();
     const ampM = hour > 12 ? 'PM' : 'AM';
 
      hour = hour%12 || 12;
      
      time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${ampM}`;
-
+     date.innerHTML=`${tdate}`;
      setTimeout(currenttime,1000)
 
 }
