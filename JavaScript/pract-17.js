@@ -35,13 +35,22 @@ function Greet()
     let hour = today.getHours();
 
     if(hour<12){
-        document.body.style.backgroundImage;
+        document.body.style.backgroundImage='url("../images/morning.jpeg")';
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition="cover";
+        document.body.style.backgroundSize="cover";
+        
+        greeting.innerHTML="Good Morning";
+    }
+    else if(hour<18){
+        document.body.style.backgroundImage='url("../images/noon.jpeg")';
+        greeting.innerHTML="Good Afternoon";
+    }
+    else{
+        document.body.style.backgroundImage='url("../images/gn.jpeg")';
+        greeting.innerHTML="Good Night";
     }
 }
-
-
-
-
 
 currenttime();
 Greet();
