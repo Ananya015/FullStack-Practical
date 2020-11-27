@@ -35,7 +35,7 @@ body{
 }
 .form-container{
     margin-bottom:10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     position: relative;
 
 }
@@ -63,6 +63,7 @@ body{
     position: absolute;
     left: 0;
     visibility: hidden;
+    padding-bottom: 5px;
 
 }
 .form button{
@@ -79,4 +80,22 @@ body{
     background-color: rgb(160, 160, 160);
     color: black;
     font-weight: bolder;
+}
+.form-container.success input{
+    border-color: green;
+}
+.form-container.error input{
+    border-color: red;
+}
+.form-container.success .fa-check-circle{
+    visibility: visible;
+    color: green;
+}
+.form-container.error .fa-exclamation-circle{
+    visibility: visible;
+    color: red;
+}
+.form-container.error small{
+    visibility: visible;
+    color: red;
 }
