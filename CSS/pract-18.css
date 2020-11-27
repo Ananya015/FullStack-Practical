@@ -51,7 +51,7 @@ body{
     outline: none;
     border: 2px solid #f0f0f0;
 }
-.form-container input i{
+.form-container i{
     position: absolute;
     right: 10px;
     top: 40px;
@@ -63,5 +63,14 @@ body{
     position: absolute;
     left: 0;
     visibility: hidden;
-    
+
+}
+.form button{
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius:5px;
+    outline: none;
 }
