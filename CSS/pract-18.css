@@ -33,3 +33,21 @@ body{
     text-align: center;
     background-color: #fff;
 }
+.form-container{
+    margin-bottom:10px;
+    padding-bottom: 10px;
+
+}
+.form-container label{
+    display: block;
+    margin-bottom:5px ;
+}
+.form-container input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #f0f0f0;
+}
+
