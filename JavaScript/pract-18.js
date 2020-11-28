@@ -29,6 +29,25 @@ function checkInput(){
         showSuccess(username);
     }
 
+    if(pass1Value == pass2Vlaue)
+    {
+            showSuccess(pass1);
+            showSuccess(pass2);
+    }
+    else{
+        showError(pass1,"password not match");
+        showError(pass2,"password not match");
+    }
+
+    if(pass1Value.trim() ==="" ){
+        showError(pass1,"password cannot be empty");
+       
+    }
+    if(pass2Vlaue.trim() ==="" ){
+        showError(pass2,"password cannot be empty");
+       
+    }
+
     
 }
 
