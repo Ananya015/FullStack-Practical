@@ -69,7 +69,7 @@ function checkInput(){
 }
     
 }
-
+    // functions
 function showError(input,msg){
     const formControl = input.parentNode;
     formControl.className = "form-container error";
