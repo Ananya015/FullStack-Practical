@@ -25,8 +25,13 @@ function checkInput(){
     {
         showError(username,"Username field cannot be blank");
     }
-    else{
+
+    else if(usernameVal.match(/^[a-z0-9]+$/g))
+    {
         showSuccess(username);
+    }
+    else{
+        showError(username,"not valid");
     }
 
     // checking password field
@@ -48,15 +53,20 @@ function checkInput(){
         showError(pass2,"password field cannot be blank");
        
     }
+    
 
     // checking email address field
 
    if(emailValue===""){
        showError(email,"This field cannot be blank" );
    }
-   if(emailValue.match(/^[\w-\.]+@([\w-]+\.)+com$/g)){
+
+   else if(emailValue.match(/^[\w-\.]+@([\w-]+\.)+com$/g)){
        showSuccess(email);
    }
+   else{
+    showError(email,"not valid");
+}
     
 }
 
