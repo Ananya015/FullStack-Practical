@@ -1,8 +1,8 @@
 const form = document.getElementById('form');
 var username = document.getElementById('user');
-const email = document.getElementById('email');
-const pass1 = document.getElementById('pass1');
-const pass2 = document.getElementById('pass2');
+const email = document.getElementById('emailid');
+const pass1 = document.getElementById('passwrd1');
+const pass2 = document.getElementById('passwrd2');
 const small = document.getElementById('small');
 
 
@@ -28,6 +28,8 @@ function checkInput(){
     else{
         showSuccess(username);
     }
+
+    
 }
 
 function showError(input,msg){
