@@ -41,18 +41,18 @@ function checkInput(){
     }
 
     if(pass1Value.trim() ==="" ){
-        showError(pass1,"password field cannot be empty");
+        showError(pass1,"password field cannot be blank");
        
     }
     if(pass2Vlaue.trim() ==="" ){
-        showError(pass2,"password field cannot be empty");
+        showError(pass2,"password field cannot be blank");
        
     }
 
     // checking email address field
 
    if(emailValue===""){
-       showError(email,"This field cannot be empty" );
+       showError(email,"This field cannot be blank" );
    }
    if(emailValue.match(/^[\w-\.]+@([\w-]+\.)+com$/g)){
        showSuccess(email);
