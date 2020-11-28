@@ -20,34 +20,43 @@ function checkInput(){
     const pass1Value = pass1.value;
     const pass2Vlaue = pass2.value;
     
-
+//   checking username field
     if(usernameVal === "")
     {
-        showError(username,"Username cannot be blank");
+        showError(username,"Username field cannot be blank");
     }
     else{
         showSuccess(username);
     }
 
+    // checking password field
     if(pass1Value == pass2Vlaue)
     {
             showSuccess(pass1);
             showSuccess(pass2);
     }
     else{
-        showError(pass1,"password not match");
-        showError(pass2,"password not match");
+        showError(pass1,"password doesn't match");
+        showError(pass2,"password doesn't match");
     }
 
     if(pass1Value.trim() ==="" ){
-        showError(pass1,"password cannot be empty");
+        showError(pass1,"password field cannot be empty");
        
     }
     if(pass2Vlaue.trim() ==="" ){
-        showError(pass2,"password cannot be empty");
+        showError(pass2,"password field cannot be empty");
        
     }
 
+    // checking email address field
+
+   if(emailValue===""){
+       showError(email,"This field cannot be empty" );
+   }
+   if(emailValue.match(/^[\w-\.]+@([\w-]+\.)+com$/g)){
+       showSuccess(email);
+   }
     
 }
 
