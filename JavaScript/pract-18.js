@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const username = document.getElementById('username');
+var username = document.getElementById('user');
 const email = document.getElementById('email');
 const pass1 = document.getElementById('pass1');
 const pass2 = document.getElementById('pass2');
@@ -10,15 +10,34 @@ form.addEventListener('submit', (e)=>{
 
 e.preventDefault();
 
+checkInput(); 
 
-}
-);
+});
 
 function checkInput(){
-    const usernameVal= username.Value();
-    const emailnameVal = email.Value();
-    const pass1Value = pass1.Value();
-    const pass2Vlaue = pass2 .Value();
+    const usernameVal = username.value;
+    const emailValue = email.value;
+    const pass1Value = pass1.value;
+    const pass2Vlaue = pass2.value;
     
 
+    if(usernameVal === "")
+    {
+        showError(username,"Username cannot be blank");
+    }
+    else{
+        showSuccess(username);
+    }
+}
+
+function showError(input,msg){
+    const formControl = input.parentNode;
+    formControl.className = "form-container error";
+    const small=formControl.querySelector('small');
+    small.innerHTML = msg; 
+
+}
+function showSuccess(input){
+    const formControl = input.parentNode;
+    formControl.className = "form-container success";
 }
