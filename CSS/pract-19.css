@@ -57,3 +57,10 @@ form button:hover{
     cursor: pointer;
     background-color: rgb(134, 0, 0);
 }
+
+#form2{
+    left: 450px;
+}
+#form3{
+    left: -450px;
+}
