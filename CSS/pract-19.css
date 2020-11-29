@@ -53,3 +53,7 @@ form button{
     background-color: rgb(211, 12, 12);
     color: white;
 }
+form button:hover{
+    cursor: pointer;
+    background-color: rgb(134, 0, 0);
+}
