@@ -81,3 +81,9 @@ form button:hover{
     font-weight: 600;
 
 }
+#progress{
+    width: 120px;
+    height: 100%;
+    background-color: rgb(211, 12, 12);
+    position: absolute;
+}
