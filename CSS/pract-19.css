@@ -63,5 +63,21 @@ form button:hover{
     left: 450px;
 }
 #form3{
-    left: -450px;
+    left: 450px;
+}
+
+.step{
+    position: relative;
+    height: 40px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -1px 5px -1px #000;
+}
+.step1{
+    width: 120px;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+
 }
