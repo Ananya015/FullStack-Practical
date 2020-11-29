@@ -39,3 +39,17 @@ form input{
     border-bottom: 1px solid gray;
 
 }
+.btn{
+    margin: 30px 0px;
+    text-align: center;
+
+}
+form button{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(211, 12, 12);
+    color: white;
+}
