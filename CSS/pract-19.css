@@ -18,6 +18,7 @@ body{
     border-radius: 10px;
     background-color: whitesmoke;
     position: relative;
+    overflow: hidden;
 }
 .container form{
     position: absolute;
