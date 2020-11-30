@@ -88,6 +88,7 @@ form button:hover{
     height: 100%;
     background-color: rgb(211, 12, 12);
     position: absolute;
+    transition: 1s;
 }
 #progress::after{
     content: '';
