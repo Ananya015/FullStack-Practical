@@ -24,6 +24,7 @@ body{
     left: 40px;
     top: 70px;
     width: 280px;
+    transition: .5s;
 
 }
 form h3{

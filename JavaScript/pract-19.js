@@ -6,3 +6,25 @@
  const next2=document.getElementById('next2');
  const back1=document.getElementById('back1');
  const back2=document.getElementById('back2');
+
+
+ next1.onclick= function (){
+     form1.style.left = "-450px";
+     form2.style.left = "40px";
+
+ }
+back1.onclick= function (){
+    form1.style.left = "40px";
+    form2.style.left = "450px";
+    
+}
+next2.onclick= function (){
+    form2.style.left = "-450px";
+    form3.style.left = "40px";
+
+}
+back2.onclick= function (){
+   form2.style.left = "40px";
+   form3.style.left = "450px";
+   
+}
